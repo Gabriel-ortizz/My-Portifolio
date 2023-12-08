@@ -29,7 +29,7 @@
 	--icon-color: #56575A;
 }
 
-html[data-theme='light'] .brand__logo {
+html[data-theme='light'] .header-logo {
   filter: invert(1);
 }
 
@@ -136,9 +136,10 @@ p {
   justify-content: flex-end;
 }
 
-.header-rand .brand-logo {
-  width: 3.25rem;
-  height: 3.25rem;
+.header-brand .header-logo{
+  width: 2.25rem;
+  height: 2.25rem;
+  text-transform: uppercase;
 }
 
 #toggleTheme {
@@ -257,6 +258,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
+ 
+ 
 }
 
 .main__content2 iframe {
@@ -566,9 +570,14 @@ footer p {
     align-items: flex-start;
   }
 
+  .main__content2 iframe{
+    width: 100%;
+  aspect-ratio: 16/9;
+  }
+
   .technologies {
     padding: 6.25rem 6rem 2rem 6rem;
-    margin-top: -6rem;
+    margin-top: -5rem;
   }
 
   footer {
