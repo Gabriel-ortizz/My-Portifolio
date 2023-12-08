@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,49 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
   <header class="header">
+    <nav class="header-nav">
+      <ul class="menu menu-desktop">
+        <li class="menu-item">
+          <a class="menu-link active" href="#home">
+            <span class="menu-text">Home</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#projetos">
+            <span class="menu-text">PROJETOS</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#sobre">
+
+            <span class="menu-text">SOBRE</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#contato">
+
+            <span class="menu-text">CONTATO</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="header-brand">
       <img class="header-logo" src="public/favicon.ico" alt="Logo">
 
     </div>
-    <i id="toggleTheme" class="bi bi-sun"></i>
+    <div class="header-toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
   </header>
-  <nav>
+  <nav class="nav-mobile">
     <ul class="menu menu-mobile">
       <li class="menu-item">
         <a class="menu-link active" href="#home">
           <i class="menu-icon bi bi-house-door"></i>
-          <span class="menu-text">HOME</span>
+          <span class="menu-text">Home</span>
         </a>
       </li>
       <li class="menu-item">
@@ -35,7 +65,8 @@
           <i class="menu-icon bi bi-person"></i>
           <span class="menu-text">SOBRE</span>
         </a>
-      </li> <li class="menu-item">
+      </li>
+      <li class="menu-item">
         <a class="menu-link" href="#contato">
           <i class="menu-icon bi bi-envelope"></i>
           <span class="menu-text">CONTATO</span>
@@ -45,4 +76,5 @@
   </nav>
   <h1>GB</h1>
 </body>
+
 </html>
