@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
+
 :root{
   --primary-color: #F0F0F0;
 
@@ -22,6 +25,11 @@
 
 body{
  background:var(--primary-bg-color);
+ font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
 }
 
 i{
@@ -54,4 +62,26 @@ i{
 
 .menu-mobile{
   justify-content: space-between;
+}
+
+.menu-mobile .menu-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 1rem;
+}
+
+.menu-icon, .menu-text{
+  color: var(--text-color);
+}
+
+.menu-icon{
+  font-size: 1.5rem;
+}
+
+.menu-text{
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
