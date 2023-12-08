@@ -29,6 +29,10 @@
 	--icon-color: #56575A;
 }
 
+html[data-theme='light'] .header-logo{
+  filter: invert();
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +82,8 @@ i {
 #toggleTheme {
   font-size: 1.5rem;
   color: var(--primary-color);
+  cursor: pointer;
+  transition: ease-in-out .4s;
 }
 
 .menu {
