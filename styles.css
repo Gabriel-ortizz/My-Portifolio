@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
 
-:root {
+:root, :root[data-theme='dark']{
   --primary-color: #f0f0f0;
 
   --primary-bg-color: #111217;
@@ -13,6 +13,20 @@
   --text-color: #9a9a9c;
   --link-color: #9a9a9c;
   --icon-color: #c7c8c9;
+}
+
+:root[data-theme='light'] {
+  --primary-color: #0B0B0F;
+
+	--primary-bg-color: #E9E9E9;
+	--secondary-bg-color: #C7C8C9;
+	--primary-border-color: #C7C8C9;
+	--secondary-border-color: #9A9A9C;
+
+	--title-color: #0B0B0F;
+	--text-color: #28292E;
+	--link-color: #28292E;
+	--icon-color: #56575A;
 }
 
 * {
@@ -30,6 +44,12 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
+}
+
+a{
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 i {
@@ -137,10 +157,14 @@ i {
   .header-toggle {
     min-width: 30%;
   }
+
+  
+ 
 }
 
 @media (min-width: 1400px) {
   .header {
     padding: 1rem 15rem;
   }
+  
 }
