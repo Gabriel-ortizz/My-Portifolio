@@ -58,10 +58,19 @@ i{
 .menu{
   display: flex;
   align-items: center;
+  background: var(--primary-bg-color);
+}
+
+.menu-item{
+  width: 100%;
 }
 
 .menu-mobile{
   justify-content: space-between;
+  border-top:1px solid var(--primary-border-color);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
 
 .menu-mobile .menu-link{
@@ -69,11 +78,17 @@ i{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
+  gap: 0.5rem;
   padding: 0.5rem 1rem;
 }
 
-.menu-icon, .menu-text{
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+  .menu-icon, .menu-text{
   color: var(--text-color);
 }
 
@@ -84,4 +99,10 @@ i{
 .menu-text{
   font-size: 0.75rem;
   text-transform: uppercase;
+}
+
+@media (min-width:768px){
+  .menu-mobile{
+    display: none;
+  }
 }
