@@ -564,7 +564,7 @@ footer p {
     width: 80%;
   }
 
-  .main__content1 {
+  .main__content1{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -573,6 +573,17 @@ footer p {
   .main__content2 iframe{
     width: 100%;
   aspect-ratio: 16/9;
+  }
+  
+  .habilidades{
+    display: flex;
+    flex-direction: column;
+    padding: 6.25rem 1rem 2rem 1rem;
+    background: var(--secondary-bg-color);
+  }
+
+  .habilidades h2{
+    text-transform: none;
   }
 
   .technologies {
